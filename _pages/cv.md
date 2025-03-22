@@ -11,54 +11,49 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Information and Communication Engineering, Tianjin University, 2023
+* M.Eng. in Electronic and Communication Engineering, Tianjin University, 2018
+* B.S. in Internet of Things Engineering, Tianjin University, 2015
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* July 2023: Engineer
+  * Changchun Institute of Optics, Fine Mechanics and Physics, Chinese Academy of Sciences
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+Research interests
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Remote sensing
+* Object recognition
+* 3D vision
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Talks
+
+<!-- TODO Fundings & projects
 ======
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+  {% endfor %}</ul> -->
+
+<!-- Talks
+======
+  <ul>{% for post in site.talks reversed %}
+    {% include archive-single-talk-cv.html  %}
+  {% endfor %}</ul> -->
+
+<!-- Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
+  {% endfor %}</ul> -->
+
+Service
 ======
-* Currently signed in to 43 different slack teams
+* Conferences organization
+  * CITA 2023, Topic Secretary
+* Reviewer
+  * Conferences: CVPR, ICCV, ECCV, ACCV2024, BIBM2022, 3DV2022
+  * Journals: IEEE-TPAMI, IEEE-TNNLS, IEEE-TCyber, Science China Information Sciences, Pattern Recognition, Pattern Recognition Letters

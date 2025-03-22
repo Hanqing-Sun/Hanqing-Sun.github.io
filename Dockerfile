@@ -7,6 +7,11 @@ RUN apt-get update && apt-get install -y \
     nodejs \
     && rm -rf /var/lib/apt/lists/*
 
+# Config gem & bundler
+RUN gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+RUN gem install bundler:2.3.26
+RUN bundle config mirror.https://rubygems.org https://gems.ruby-china.com
+
 # Set the working directory inside the container
 WORKDIR /usr/src/app
 
@@ -14,7 +19,7 @@ WORKDIR /usr/src/app
 COPY Gemfile ./
 
 # Install bundler and dependencies
-RUN gem install bundler:2.3.26 && bundle install
+RUN bundle install
 
 # Command to serve the Jekyll site
 CMD ["jekyll", "serve", "-H", "0.0.0.0", "-w", "--config", "_config.yml,_config_docker.yml"]
